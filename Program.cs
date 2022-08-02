@@ -28,7 +28,7 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), 
 inum = 0;
 int anum = 1, res = 2;
-while (inum<num) 
+while (anum<num) 
 {
 res = anum * res;
 //Console.WriteLine(anum + " * " + res + " = " + res);
@@ -48,10 +48,10 @@ while (i<array.Length)
 {
 int num = new Random().Next(0, 1);
 array [i] = num;
-Console.WriteLine("[ " + num );
+Console.Write("[ " + num );
 i++;
 }
-Console.WriteLine(" ]");
+Console.Write(" ]");
 
 
 }
