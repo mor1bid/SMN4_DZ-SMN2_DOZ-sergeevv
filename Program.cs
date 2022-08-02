@@ -36,6 +36,22 @@ anum++;
 bnum++;
 inum++;
 }
-
 }
 Z2();
+
+void Z3() 
+{
+
+int [] array = new int [8];
+int i = 0;
+while (i<=array.Length) 
+{
+int num = new Random().Next(0,1);
+array [i] = num;
+Console.WriteLine("[ " + num );
+}
+Console.WriteLine(" ]");
+
+
+}
+Z3();
