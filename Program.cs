@@ -45,10 +45,11 @@ void Z3()
 int [] array = new int [8];
 int i = 0;
 while (i<array.Length) 
+Console.Write("[ ");
 {
 int num = new Random().Next(0, 2);
 array [i] = num;
-Console.Write("[ " + num );
+Console.Write(num + " ,");
 i++;
 }
 Console.Write(" ]");
