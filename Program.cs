@@ -46,9 +46,10 @@ int [] array = new int [8];
 int i = 0;
 while (i<=array.Length) 
 {
-int num = new Random().Next(0,1);
+int num = new Random().Next(0, 1);
 array [i] = num;
 Console.WriteLine("[ " + num );
+i++;
 }
 Console.WriteLine(" ]");
 
