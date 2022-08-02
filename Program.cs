@@ -28,7 +28,7 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), 
 inum = 0;
 int anum = 1, bnum = 2; //res = anum * bnum;
-while (inum<num) 
+while (inum<=num) 
 {
 string res = ($"{anum * bnum}");
 //Console.WriteLine(anum + " * " + bnum + " = " + res);
