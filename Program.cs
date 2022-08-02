@@ -19,7 +19,7 @@ int dig = num % 10, sum = dig + num, dug = num;
 while (dug>0) 
 {
 dig = num % 10;
-dug = (dug / 10) % 10;
+dug = (dug / 100) % 10;
 sum = dig + dug;
 }
 Console.WriteLine(num + " --> " + sum);
