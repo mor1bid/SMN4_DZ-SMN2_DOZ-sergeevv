@@ -25,13 +25,13 @@ Z1();
 void Z2() 
 {
 Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine()), 
+int num = Convert.ToInt32(Console.ReadLine()),
 inum = 0;
 int anum = 1, bnum = 2;
 while (inum<num) 
 {
-int res = anum * bnum;
-Console.WriteLine(anum + " * " + bnum + " = " + res);
+bnum = anum * bnum;
+Console.WriteLine(anum + " * " + bnum + " = " + bnum);
 anum++;
 bnum++;
 inum++;
