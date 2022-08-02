@@ -27,16 +27,18 @@ void Z2()
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), 
 inum = 0;
-int anum = 1, bnum = 2;
-while (inum<num-1) 
+int anum = 1, bnum = 2, res = anum * bnum;;
+while (inum<num) 
 {
-int res = anum * bnum;
-Console.WriteLine(anum + " * " + bnum + " = " + res);
+//Console.WriteLine(anum + " * " + bnum + " = " + res);
 anum++;
 bnum++;
 inum++;
+res = anum * bnum;
 }
+Console.Write(res);
 }
+Console.WriteLine("");
 Z2();
 
 
