@@ -12,10 +12,11 @@ DZ1();
 Console.WriteLine("");
 void DZ2() 
 {
-//Console.WriteLine("Введите число: ");
-int num = new Random().Next(1, 2000000001);
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+//int num = new Random().Next(1, 2000000001);
 int dig = num % 10, sum = dig + num;
-while (num>1) 
+while (num>0) 
 {
 num /= 10 % 10;
 sum = dig + num;
