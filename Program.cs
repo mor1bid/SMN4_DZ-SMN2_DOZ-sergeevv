@@ -30,7 +30,7 @@ inum = 0;
 while (inum<num) 
 {
 int anum = 1, bnum = 2;
-string res = ($"{anum * bnum}");
+int res = anum * bnum;
 Console.WriteLine(anum + " + " + bnum + " = " + res);
 anum++;
 bnum++;
