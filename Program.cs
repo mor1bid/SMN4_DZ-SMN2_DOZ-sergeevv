@@ -16,7 +16,7 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
 int dig = num % 10, sum = dig + num, dug = num;
-while (dug>=0) 
+while (dug>0) 
 {
 dig = num % 10;
 dug = (dug / 10) % 10;
