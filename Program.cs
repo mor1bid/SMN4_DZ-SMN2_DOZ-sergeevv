@@ -30,13 +30,13 @@ inum = 0;
 int anum = 1, bnum = 2, res = anum * bnum;;
 while (inum<num) 
 {
+res = anum * bnum;
 //Console.WriteLine(anum + " * " + bnum + " = " + res);
 anum++;
 bnum++;
 inum++;
-res = anum * bnum;
 }
-Console.Write(res);
+Console.WriteLine(res);
 }
 Console.WriteLine("");
 Z2();
