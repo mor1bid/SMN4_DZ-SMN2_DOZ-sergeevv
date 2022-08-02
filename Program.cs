@@ -31,10 +31,11 @@ int anum = 1, res = 2;
 while (inum<num-1) 
 {
 res = anum * res;
-Console.WriteLine(anum + " * " + res + " = " + res);
+//Console.WriteLine(anum + " * " + res + " = " + res);
 anum++;
 inum++;
 }
+Console.WriteLine(res);
 }
 Z2();
 
