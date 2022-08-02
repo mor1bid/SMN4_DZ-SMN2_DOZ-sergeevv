@@ -6,13 +6,21 @@ int A = Convert.ToInt32(Console.ReadLine()),
 double Ab = Math.Pow(A, B);
 Console.WriteLine(A + " в степени " + B + " = " + Ab);
 }
+Console.WriteLine("");
 DZ1();
 
+Console.WriteLine("");
 void DZ2() 
 {
-
-
-
+Console.WriteLine("Введите число: ");
+int num = new Random().Next(0, 2000000001);
+int dig = num % 10, sum = dig + num;
+while (num>0) 
+{
+num /= 10 % 10;
+sum = dig + num;
+}
+Console.WriteLine(num + " --> " + sum);
 }
 Console.WriteLine("");
 DZ2();
