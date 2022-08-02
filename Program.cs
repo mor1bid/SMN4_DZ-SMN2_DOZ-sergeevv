@@ -34,7 +34,6 @@ bnum = anum * bnum;
 int res = anum * bnum;
 Console.WriteLine(anum + " * " + bnum + " = " + res);
 anum++;
-bnum++;
 inum++;
 }
 }
