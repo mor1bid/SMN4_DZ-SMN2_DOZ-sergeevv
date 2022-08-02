@@ -28,7 +28,7 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), 
 inum = 0;
 int anum = 1, res = 2;
-while (anum<num) 
+while (anum<=num) 
 {
 res = anum * res;
 //Console.WriteLine(anum + " * " + res + " = " + res);
@@ -44,14 +44,15 @@ void Z3()
 
 int [] array = new int [8];
 int i = 0;
-while (i<array.Length) 
 Console.Write("[ ");
+while (i<array.Length) 
 {
 int num = new Random().Next(0, 2);
 array [i] = num;
-Console.Write(num + " ,");
+Console.Write(num + ", ");
 i++;
 }
+Console.WriteLine("\b\b ");
 Console.Write(" ]");
 
 
