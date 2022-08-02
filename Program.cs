@@ -31,7 +31,8 @@ int anum = 1, bnum = 2;
 while (inum<num) 
 {
 bnum = anum * bnum;
-Console.WriteLine(anum + " * " + bnum + " = " + bnum);
+int res = anum * bnum;
+Console.WriteLine(anum + " * " + bnum + " = " + res);
 anum++;
 bnum++;
 inum++;
