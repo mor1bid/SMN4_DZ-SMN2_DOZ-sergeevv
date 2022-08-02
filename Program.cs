@@ -32,10 +32,10 @@ while (inum<num)
 {
 string res = ($"{anum * bnum}");
 //Console.WriteLine(anum + " * " + bnum + " = " + res);
+Console.WriteLine(res);
 anum++;
 bnum++;
 inum++;
-Console.WriteLine(res);
 }
 }
 Console.WriteLine("");
