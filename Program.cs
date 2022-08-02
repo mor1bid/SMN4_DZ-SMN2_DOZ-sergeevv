@@ -32,7 +32,7 @@ while (inum<=num)
 {
 int res = anum * bnum;
 Console.WriteLine(anum + " * " + bnum + " = " + res);
-anum++;
+anum = anum*bnum;
 bnum++;
 inum++;
 }
