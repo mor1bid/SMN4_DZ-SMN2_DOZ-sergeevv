@@ -18,7 +18,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 int dig, sum = 0, dug = num;
 while (dug>0) 
 {
-dig = dug % 10 / 10;
+dig = dug / 10 % 10;
 dug = (dig % 10);
 sum += dig + dug;
 }
