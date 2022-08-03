@@ -23,7 +23,7 @@ dig = dog % 10;
 dug = (dog / 10) % 10;
 if (num > 999) 
 { 
-    deg = (dog / 100) / 10; 
+    deg = (dog / 100) % 10; 
     dog /= 1000;
 }
 else dog = dog / 100;
