@@ -16,15 +16,18 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
 num = Math.Abs(num);
-int dig, sum = 0, dug = num, dog = num;
+int dig, sum = 0, dug = num, dog = num, deg = 0;
 while (dog > 0) 
 {
 dig = dog % 10;
-//dog /= 10;
 dug = (dog / 10) % 10;
-if (num > 999) dog = (dog % 10) / 100;
+if (num > 999) 
+{ 
+    deg = (dog / 100) / 10; 
+    dog /= 1000;
+}
 else dog = dog / 100;
-Console.WriteLine(num + "-->" + $"{sum += dig + dug + dog}");
+Console.WriteLine(num + "-->" + $"{sum += dig + dug + dog + deg}");
 dog = (dog / 100);
 }
 //Console.WriteLine(num + " --> " + sum);
