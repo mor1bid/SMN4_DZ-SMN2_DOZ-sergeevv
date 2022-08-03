@@ -17,7 +17,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
 int dig, sum = 0, dug = num, dog = num;
 //dig = dug % 10;
-while (dug > 0) 
+while (dug >= num % 10) 
 {
 dig = dug % 10;
 //dog /= 10;
