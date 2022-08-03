@@ -20,7 +20,7 @@ while (dug > 0)
 {
 dig = dug % 10;
 dug /= 10;
-sum = dig + dug;
+sum += dig + dug;
 }
 Console.WriteLine(num + " --> " + sum);
 }
