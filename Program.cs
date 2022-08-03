@@ -19,10 +19,10 @@ num = Math.Abs(num);
 int dig, sum = 0, dug = num, dog = num;
 while (dug > 0) 
 {
-dig = dug % 10;
+dig = dog % 10;
 dug = (dog / 10) % 10;
-//if (num > 999) dog = dog / 1000;
-//else dog = dog / 100;
+if (num > 999) dog = dog / 1000;
+else dog = dog / 100;
 Console.WriteLine(num + "-->" + $"{sum = dig + dug}");
 dog /= 10;
 }
