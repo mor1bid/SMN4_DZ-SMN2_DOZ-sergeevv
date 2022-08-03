@@ -17,12 +17,12 @@ int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
 num = Math.Abs(num);
 int dig, sum = 0, dug = num, dog = num;
-while (dog > 0) 
+while (dug > 0) 
 {
-dig = dug % 10;
-dug = (dug / 10) % 10;
-if (num > 999) dog = dog / 1000;
-else dog = dog / 100;
+dig = dog % 10;
+dug = (dog / 10) % 10;
+//if (num > 999) dog = dog / 1000;
+//else dog = dog / 100;
 Console.WriteLine(num + "-->" + $"{sum = dig + dug + dog}");
 dog /= 10;
 }
