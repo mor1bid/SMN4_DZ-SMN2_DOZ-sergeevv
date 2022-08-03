@@ -18,6 +18,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 int dig, sum = 0, dug = num, dog = num, ten = 10;
 while (dog > 0) 
 {
+dog /= ten;
 dig = dug % 10;
 dug = (dug % 100) / 10;
 dog /= ten;
