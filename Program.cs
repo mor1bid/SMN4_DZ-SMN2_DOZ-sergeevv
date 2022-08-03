@@ -27,7 +27,7 @@ if (num > 999)
     dog /= 1000;
 }
 else dog = dog / 100;
-Console.WriteLine(num + "-->" + $"{sum += dig + dug + dog + deg}");
+Console.WriteLine(num + "-->" + $"{sum = dig + dug + dog + deg}");
 dog = (dog / 100);
 }
 //Console.WriteLine(num + " --> " + sum);
