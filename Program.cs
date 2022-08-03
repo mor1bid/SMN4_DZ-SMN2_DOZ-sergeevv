@@ -20,7 +20,7 @@ while (dog > 0)
 {
 dig = dug % 10;
 dug = (dug % 100) / 10;
-dog /= 100; 
+dog /= 1000; 
 Console.WriteLine(num + "-->" + $"{sum = dig + dug + dog}");
 }
 //Console.WriteLine(num + " --> " + sum);
