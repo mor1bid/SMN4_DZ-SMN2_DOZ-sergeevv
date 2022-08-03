@@ -21,8 +21,7 @@ while (dog > 0)
 {
 dig = dug % 10;
 dug = (dug / 10) % 10;
-if (num > 99) dog = dog / 100;
-else if (dog > 999) dog = dog / 1000;
+if (num > 999) dog = dog / 1000;
 else dog = dog / 100;
 Console.WriteLine(num + "-->" + $"{sum = dig + dug + dog}");
 }
