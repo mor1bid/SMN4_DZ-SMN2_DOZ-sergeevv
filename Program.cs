@@ -16,12 +16,12 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
 int dig = num, sum = 0, dug = num, i = num;
-while (i > 0) 
+while (dug > 1) 
 {
 dig = dug % 10;
 dug /= 10;
 sum += dig + dug;
-i /=1000;
+//i /=1000;
 }
 Console.WriteLine(num + " --> " + sum);
 }
