@@ -19,7 +19,6 @@ num = Math.Abs(num);
 int dig, sum = 0, dug = num, dog = num;
 while (dug > 0) 
 {
-dog /= 10;
 dig = dog % 10;
 dug = (dog / 10) % 10;
 //if (num > 999) dog = dog / 1000;
