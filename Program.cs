@@ -19,7 +19,7 @@ int dig, sum = 0, dug = num, dog = num;
 while (dug >= 10) 
 {
 dig = dog % 10;
-dog /= 10;
+//dog /= 10;
 dug = (dug / 10) % 10;
 sum = dig + dug;
 }
