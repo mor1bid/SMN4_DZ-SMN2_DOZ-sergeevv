@@ -12,11 +12,12 @@ DZ1();
 Console.WriteLine("");
 void DZ2() 
 {
-Console.WriteLine("Введите число: ");
+//Console.WriteLine("Введите число: ");
 //int num = Convert.ToInt32(Console.ReadLine());
 int num = new Random().Next(0, 10000);
 num = Math.Abs(num);
 int dig, sum = 0, dug = num, dog = num, deg = 0;
+Console.WriteLine("Сумма цифер числа ");
 while (dog > 0) 
 {
 dig = dog % 10;
@@ -27,7 +28,7 @@ if (num > 999)
     dog /= 1000;
 }
 else dog = dog / 100;
-Console.WriteLine(num + " --> " + $"{sum = dig + dug + dog + deg}");
+Console.WriteLine(num + " = " + $"{sum = dig + dug + dog + deg}");
 dog = (dog / 100);
 }
 //Console.WriteLine(num + " --> " + sum);
