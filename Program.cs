@@ -21,7 +21,7 @@ while (dog > 0)
 {
 //dog /= ten;
 dig = dug % 10;
-dug = dug / 10;
+dug = (dug / 10) % 10;
 dog = (dog / 10) / 10;
 //dog /= ten;
 //ten *= 10; 
