@@ -17,7 +17,7 @@ void DZ2()
 int num = new Random().Next(0, 10000);
 num = Math.Abs(num);
 int dig, sum = 0, dug = num, dog = num, deg = 0;
-Console.WriteLine("Сумма цифер числа ");
+Console.Write("Сумма цифер числа ");
 while (dog > 0) 
 {
 dig = dog % 10;
