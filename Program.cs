@@ -20,9 +20,9 @@ int dig, sum = 0, dug = num, dog = num, ten = 10;
 while (dog > 0) 
 {
 //dog /= ten;
-dig = dug % 10;
+dig = dug / 10;
 dug = (dug / 10) % 10;
-dog = dug / 10;
+dog = dug % 10;
 //dog /= ten;
 //ten *= 10; 
 Console.WriteLine(num + "-->" + $"{sum = dig + dug + dog}");
