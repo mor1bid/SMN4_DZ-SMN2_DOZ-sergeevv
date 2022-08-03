@@ -19,8 +19,7 @@ double dig = num, sum = 0, dug = num;
 while (dug > 0) 
 {
 dig = dug % 10;
-dug %= 100;
-Math.Round(dug, 1);
+dug = Math.Round(dug / 100, 1) % 10;
 sum += dig + dug;
 }
 Console.WriteLine(num + " --> " + sum);
