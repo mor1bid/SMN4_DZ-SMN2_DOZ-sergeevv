@@ -15,13 +15,12 @@ void DZ2()
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 //int num = new Random().Next(1, 2000000001);
-int dig = num, sum = 0, dug = num, i = num;
-while (dug > 1) 
+int dig, sum = 0, dug = num;
+while (dug > 10) 
 {
 dig = dug % 10;
 dug /= 10;
 sum += dig + dug;
-//i /=1000;
 }
 Console.WriteLine(num + " --> " + sum);
 }
