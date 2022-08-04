@@ -47,7 +47,9 @@ Console.Write("Из: [");
 while (i<si) 
 {
     int num = new Random().Next(-50, 51);
-    ray[i] = num;
+    int dig = num;
+    dig = Math.Abs(dig);
+    ray[i] = dig;
     Console.Write(ray[i] + ", ");
     i++;
 }
