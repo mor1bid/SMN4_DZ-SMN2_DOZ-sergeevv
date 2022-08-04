@@ -48,8 +48,8 @@ while (i<=si)
 {
     int num = new Random().Next(-50, 51);
     ray[i] = num;
-    i++;
     Console.Write(ray[i] + ", ");
+    i++;
 }
 Console.Write("/b/b ");
 Console.Write("]");
