@@ -40,8 +40,30 @@ DZ2();
 Console.WriteLine("");
 void DZ3() 
 {
+int [] ray = new int [8];
+int si = ray.Length, 
+    i = 0;
+Console.Write("Из: [");
+while (i<si) 
+{
+    int num = new Random().Next(-50, 51);
+    ray[i] = num;
+    i++;
+    Console.Write(ray[i] + ", ");
+}
+Console.Write("/b/b ");
+Console.Write("]");
+Console.WriteLine("");
+Console.Write("В: [");
+}
+DZ3();
+
+
+Console.WriteLine("");
+void DZ02() 
+{
 
 
 
 }
-DZ3();
+DZ02();
