@@ -61,7 +61,7 @@ while (i<si)
 {
     while (j < si) 
     {
-        if (ray[i] < ray[j]) min = ray[j];
+        if (ray[j] < ray[min]) min = j;
         j++;
     }
 tmp = ray [i];
@@ -69,7 +69,7 @@ ray [i] = ray [min];
 ray [min] = tmp;
 Console.Write($"{ray[i]}" + ", ");
 i++;
-j = i + 1;
+//j = i + 1;
 }
 Console.Write("\b\b" + "]");
 }
