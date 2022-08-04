@@ -67,7 +67,7 @@ min = i;
     }
 tmp = ray [i];
 ray [i] = ray [min];
-Console.Write(ray[i] + ", ");
+Console.Write($"{ray[i]}" + ", ");
 i++;
 }
 Console.Write("\b\b" + "]");
