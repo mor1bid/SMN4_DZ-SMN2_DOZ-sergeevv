@@ -57,7 +57,7 @@ Console.Write("\b\b" + "]");
 Console.WriteLine("");
 Console.Write("В: [");
 int j = i + 1, min = i, tmp = 0;
-while (i<si) 
+while (i<=si) 
 {
     while (j < si) 
     {
