@@ -47,27 +47,29 @@ Console.Write("Из: [");
 while (i<si) 
 {
     int num = new Random().Next(-50, 51);
+    num = Math.Abs(num);
     ray[i] = num;
     Console.Write(ray[i] + ", ");
     i++;
 }
+i = 0;
 Console.Write("\b\b" + "]");
 //Console.Write("]");
 Console.WriteLine("");
 Console.Write("В: [");
-int i2 = 0, j = i2 + 1, min = i2, tmp = 0;
-while (i2<si) 
+int j = i + 1, min = i, tmp = 0;
+while (i<si) 
 {
     while (j < si) 
     {
-        if (ray[i2] < ray[j]) min = ray[j];
+        if (ray[i] < ray[j]) min = ray[j];
         j++;
     }
-tmp = ray [i2];
-ray [i2] = ray [min];
-Console.Write($"{ray[i2]}" + ", ");
+tmp = ray [i];
+ray [i] = ray [min];
+Console.Write($"{ray[i]}" + ", ");
 i++;
-j = i2 + 1;
+j = i + 1;
 }
 Console.Write("\b\b" + "]");
 }
