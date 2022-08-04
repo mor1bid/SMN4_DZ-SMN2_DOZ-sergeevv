@@ -56,10 +56,9 @@ Console.Write("\b\b" + "]");
 Console.WriteLine("");
 Console.Write("В: [");
 i = 0;
-int j = i + 1, min = ray [0], tmp = 0;
+int j = i + 1, min = i, tmp = 0;
 while (i<si) 
 {
-min = i;
     while (j < si) 
     {
         if (ray[i] < ray[j]) min = ray[j];
