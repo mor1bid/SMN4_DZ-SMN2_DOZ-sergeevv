@@ -56,20 +56,21 @@ Console.Write("\b\b" + "]");
 //Console.Write("]");
 Console.WriteLine("");
 Console.Write("В: [");
-int j = i + 1, min = i, tmp = 0;
+int j = i + 1, tmp = 0;
 while (i<si) 
 {
+    int min = i;
     while (j < si) 
     {
         if (ray[j] < ray[min]) min = j;
         j++;
     }
-tmp = ray [i];
-ray [i] = ray [min];
-ray [min] = tmp;
-Console.Write(ray[i] + ", ");
-i++;
-j = i + 1;
+    tmp = ray [i];
+    ray [i] = ray [min];
+    ray [min] = tmp;
+    Console.Write(ray[i] + ", ");
+    i++;
+    j = i + 1;
 }
 Console.Write("\b\b" + "]");
 }
