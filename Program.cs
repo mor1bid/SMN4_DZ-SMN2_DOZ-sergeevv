@@ -51,10 +51,26 @@ while (i<si)
     Console.Write(ray[i] + ", ");
     i++;
 }
-Console.Write("\b\b ");
-Console.Write("]");
+Console.Write("\b\b" + "]");
+//Console.Write("]");
 Console.WriteLine("");
 Console.Write("В: [");
+i = 0;
+int j = i + 1, min = ray [0], tmp = 0;
+while (i<si) 
+{
+min = i;
+    while (j < si) 
+    {
+        if (ray[i] < ray[j]) min = ray[j];
+        j++;
+    }
+tmp = ray [i];
+ray [i] = ray [min];
+Console.Write(ray[i] + ", ");
+i++;
+}
+Console.Write("\b\b" + "]");
 }
 DZ3();
 
