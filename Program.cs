@@ -44,7 +44,7 @@ int [] ray = new int [8];
 int si = ray.Length, 
     i = 0;
 Console.Write("Из: [");
-while (i<si) 
+while (i<=si) 
 {
     int num = new Random().Next(-50, 51);
     ray[i] = num;
