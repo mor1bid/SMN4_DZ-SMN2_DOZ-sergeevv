@@ -59,7 +59,7 @@ i = 0;
 int j = i + 1, min = i, tmp = 0;
 while (i<si) 
 {
-    while (j < si) 
+    while (j < si-1) 
     {
         if (ray[i] < ray[j]) min = ray[j];
         j++;
