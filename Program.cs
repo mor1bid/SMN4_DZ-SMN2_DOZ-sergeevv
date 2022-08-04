@@ -67,7 +67,7 @@ while (i<si)
 tmp = ray [i];
 ray [i] = ray [min];
 ray [min] = tmp;
-Console.Write($"{ray[i]}" + ", ");
+Console.Write(ray[i] + ", ");
 i++;
 //j = i + 1;
 }
