@@ -48,7 +48,6 @@ while (i<si)
 {
     int num = new Random().Next(-50, 51);
     ray[i] = num;
-    ray[i] = Math.Abs(num);
     Console.Write(ray[i] + ", ");
     i++;
 }
