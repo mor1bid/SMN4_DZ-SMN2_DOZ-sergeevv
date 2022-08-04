@@ -51,7 +51,7 @@ while (i<si)
     Console.Write(ray[i] + ", ");
     i++;
 }
-Console.Write("/b /b ");
+Console.Write("\b\b ");
 Console.Write("]");
 Console.WriteLine("");
 Console.Write("В: [");
