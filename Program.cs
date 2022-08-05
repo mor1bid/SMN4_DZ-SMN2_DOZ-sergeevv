@@ -74,7 +74,7 @@ while (i<si)
     ar [min] = tmp;
     Console.Write(ray[i] + ", ");
     i++;
-    j = i + 1;
+    //j = i + 1;
 }
 Console.Write("\b\b" + "]");
 }
