@@ -65,7 +65,7 @@ while (i<si)
     int min = i;
     while (j < si) 
     {
-        if (ar[j] < ar[min]) min = j;
+        if (ray[j] < ray[min]) min = j;
         j++;
     }
     tmp = ar [i];
