@@ -71,10 +71,10 @@ while (i<si)
     }
     tmp = ar [i];
     ray [i] = ray [min];
-    ar [min] = tmp;
+    ray [min] = tmp;
     Console.Write(ray[i] + ", ");
     i++;
-    //j = i + 1;
+    j = i + 1;
 }
 Console.Write("\b\b" + "]");
 }
