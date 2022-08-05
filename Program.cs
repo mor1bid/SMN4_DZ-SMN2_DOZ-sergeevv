@@ -41,15 +41,16 @@ Console.WriteLine("");
 void DZ3() 
 {
 int [] ray = new int [8];
+int [] ar = new int [8];
 int si = ray.Length, 
     i = 0;
 Console.Write("Из: [");
 while (i<si) 
 {
     int num = new Random().Next(-50, 51);
-    int dig = num;
-    dig = Math.Abs(dig);
-    ray[i] = dig;
+    int dig = Math.Abs(num);
+    ray[i] = num;
+    ar[i] = dig;
     Console.Write(ray[i] + ", ");
     i++;
 }
@@ -64,7 +65,7 @@ while (i<si)
     int min = i;
     while (j < si) 
     {
-        if (ray[j] < ray[min]) min = j;
+        if (ar[j] < ar[min]) min = j;
         j++;
     }
     tmp = ray [i];
