@@ -69,8 +69,8 @@ while (i<si)
         if (ar[j] < ar[min]) min = j;
         j++;
     }
-    tmp = ray [i];
-    ray [i] = ar [min];
+    tmp = ar [i];
+    ray [i] = ray [min];
     ar [min] = tmp;
     Console.Write(ray[i] + ", ");
     i++;
