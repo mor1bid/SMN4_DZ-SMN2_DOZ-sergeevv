@@ -49,7 +49,6 @@ while (i<si)
 {
     int num = new Random().Next(-50, 51);
     int dig = Math.Abs(num);
-    //dig = Math.Abs(dig);
     ray[i] = num;
     ar[i] = dig;
     Console.Write(ray[i] + ", ");
@@ -80,14 +79,34 @@ while (i<si)
 }
 Console.Write("\b\b" + "]");
 }
+Console.WriteLine("");
 DZ3();
 
 
 Console.WriteLine("");
 void DZ02() 
 {
-
-
-
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine()),
+    nom = num,
+    co = 0;
+while (nom>0) 
+{
+    //numa = numb % 10;
+    nom /= 10;
+    co++;
+}
+int [] ray = new int [co];
+int numa = 0,
+    numb = num, i = 0, sum = 0;
+while (i<co) 
+{
+    numa = numb % 10;
+    sum += numa;
+    numb /= 10;
+    ray [i] = numa;
+    i++;
+}
+Console.WriteLine("Сумма цифер числа " + num + " = " + sum);
 }
 DZ02();
