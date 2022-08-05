@@ -48,7 +48,8 @@ Console.Write("Из: [");
 while (i<si) 
 {
     int num = new Random().Next(-50, 51);
-    int dig = Math.Abs(num);
+    int dig = num;
+    dig = Math.Abs(dig);
     ray[i] = num;
     ar[i] = dig;
     Console.Write(ray[i] + ", ");
@@ -68,8 +69,8 @@ while (i<si)
         if (ar[j] < ar[min]) min = j;
         j++;
     }
-    tmp = ar [i];
-    ar [i] = ray [min];
+    tmp = ray [i];
+    ray [i] = ray [min];
     ray [min] = tmp;
     Console.Write(ray[i] + ", ");
     i++;
