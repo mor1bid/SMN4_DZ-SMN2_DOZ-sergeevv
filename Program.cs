@@ -6,7 +6,7 @@ int A = Convert.ToInt32(Console.ReadLine()),
 double Ab = Math.Pow(A, B);
 Console.WriteLine(A + " в степени " + B + " = " + Ab);
 }
-Console.WriteLine("");
+Console.WriteLine();
 DZ1();
 
 // Console.WriteLine("");
@@ -36,7 +36,7 @@ DZ1();
 // DZ2();
 
 
-Console.WriteLine("");
+Console.WriteLine();
 void DZ3() 
 {
 int [] ray = new int [8];
@@ -55,7 +55,7 @@ while (i<si)
 }
 i = 0;
 Console.Write("\b\b" + "]");
-Console.WriteLine("");
+Console.WriteLine();
 Console.Write("В: [");
 int j = i + 1, tmp = 0;
 while (i<si) 
@@ -78,10 +78,11 @@ while (i<si)
 }
 Console.Write("\b\b" + "]");
 }
-Console.WriteLine("");
+Console.WriteLine();
 DZ3();
 
 
+Console.WriteLine();
 Console.WriteLine();
 void DZ02() 
 {
