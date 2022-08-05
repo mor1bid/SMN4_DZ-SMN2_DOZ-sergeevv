@@ -82,7 +82,7 @@ Console.WriteLine("");
 DZ3();
 
 
-Console.Write("");
+Console.WriteLine();
 void DZ02() 
 {
 Console.WriteLine("Введите число: ");
